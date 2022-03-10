@@ -8,7 +8,7 @@ void TestCase() {
 	for(int i = 0; i < n; i++) {
 		cin >> a[i];
 	}
-	int len = 1; // initial value is 1 because it has no previous adjacent element
+	int len = 1; // initial value is 1 because a[0] has no previous adjacent element
 	for(int i = 1; i < n; i++) { // find the initial longest good subsequence
 		len += (a[i] != a[i-1]);
 	}
